@@ -9,7 +9,6 @@ import cssnext from "postcss-cssnext";
 import colourFunctions from "postcss-colour-functions";
 import ajv from "ajv";
 import ajvKeywords from "ajv-keywords";
-import cssvariables from "postcss-css-variables";
 import sourcemaps from "gulp-sourcemaps";
 import autoprefixer from "autoprefixer";
 import lost from "lost";
