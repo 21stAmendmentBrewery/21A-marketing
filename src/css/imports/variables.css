@@ -1,0 +1,8 @@
+:root {
+    --font-family: "jaf-lapture-1", "jaf-lapture-2";
+    --font-headline: "futura-pt-1", "futura-pt-2";
+    --base-font-size: 1em;
+    --color: #333333;
+    --weight-bold: 700;
+    --weight-black: 900;
+}
