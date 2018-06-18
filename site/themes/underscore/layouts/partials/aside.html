@@ -1,0 +1,12 @@
+{{ range where .Site.RegularPages "Section" "=" "quarterly-focus" }}
+<aside>
+  <h3>{{ .Title }}</h3>
+  <em>{{ .Params.year }}</em>
+  <ol>
+    <li>Q1 {{ .Params.q1 }}</li>
+    <li>Q2 {{ .Params.q2 }}</li>
+    <li>Q3 {{ .Params.q3 }}</li>
+    <li>Q4 {{ .Params.q4 }}</li>
+  </ol>
+</aside>
+{{ end }}

@@ -1,0 +1,4 @@
+.copyright {
+  font-family: var(--font-secondary);
+  font-size: calc(var(--base-font-size) * 1);
+}
