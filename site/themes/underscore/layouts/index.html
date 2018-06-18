@@ -1,16 +1,13 @@
 {{ define "main" }}
-
 <main>
-  <ul>
+  <section>
     {{ range where .Data.Pages "Section" "programs" }}
-      <li>
+      <article>
         <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-        <div>
-          {{ .Content }}
-        </div>
-      </li>
+        {{ .Content }}
+      </article>
     {{ end }}
-  </ul>
+    {{ partial "aside" . }}
+  </section>
 </main>
-
 {{end}}

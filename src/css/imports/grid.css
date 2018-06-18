@@ -1,3 +1,15 @@
 section {
   lost-utility: clearfix;
 }
+article {
+  lost-column: 1/1 0;
+  @media (--medium-screen) {
+    lost-column: 3/4 0;
+  }
+}
+aside {
+  lost-column: 1/1 0;
+  @media (--medium-screen) {
+    lost-column: 1/4 0;
+  }
+}

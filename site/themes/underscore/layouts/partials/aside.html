@@ -1,12 +1,25 @@
-{{ range where .Site.RegularPages "Section" "=" "quarterly-focus" }}
 <aside>
-  <h3>{{ .Title }}</h3>
-  <em>{{ .Params.year }}</em>
-  <ol>
-    <li>Q1 {{ .Params.q1 }}</li>
-    <li>Q2 {{ .Params.q2 }}</li>
-    <li>Q3 {{ .Params.q3 }}</li>
-    <li>Q4 {{ .Params.q4 }}</li>
-  </ol>
+  <nav class="main-nav">
+    <ol>
+     <li><a href="/programs">Programs</a></li>
+     <li><a href="/sales-information">Sales Information</a></li>
+     <li><a href="/brand-guide">Brand Guide</a></li>
+     <li><a href="/brand-guide/assets">Assets</a></li>
+     <li><a href="/updates">Updates</a></li>
+     <li><a href="/read-me">Read Me</a></li>
+     <li>For any other needs please feel free to reach out to the Marketing team at <a href="mailto:marketing@21st-amendment.com">marketing@21st-amendment.com</a></li>
+   </ol>
+  </nav>
+  {{ range where .Site.RegularPages "Section" "=" "quarterly-focus" }}
+  <section class="quarterly-focus">
+    <h4>{{ .Title }}</h4>
+    <em>{{ .Params.year }}</em>
+    <ol>
+      <li>Q1 {{ .Params.q1 }}</li>
+      <li>Q2 {{ .Params.q2 }}</li>
+      <li>Q3 {{ .Params.q3 }}</li>
+      <li>Q4 {{ .Params.q4 }}</li>
+    </ol>
+  </section>
 </aside>
 {{ end }}

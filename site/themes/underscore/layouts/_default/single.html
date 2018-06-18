@@ -1,6 +1,11 @@
 {{ define "main" }}
-<h1>{{ .Title }}</h1>
-
-<p>{{ .Content }}</p>
-
-{{ end }}
+<main>
+  <section>
+    <article>
+      <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+      {{ .Content }}
+    </article>
+    {{ partial "aside" . }}
+  </section>
+</main>
+{{end}}
