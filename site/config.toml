@@ -1,8 +1,8 @@
 baseurl = "/"
 languageCode = "en-us"
 languageLang = "en"
-title = "My new Victor-Hugo site"
-description = "Default description for the website"
+title = "21st Amendment Brewery - Marketing"
+description = "Marketing Blog"
 theme = "underscore"
 googleAnalytics = ""
 

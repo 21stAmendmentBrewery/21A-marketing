@@ -1,8 +1,40 @@
 :root {
-    --font-family: "jaf-lapture-1", "jaf-lapture-2";
-    --font-headline: "futura-pt-1", "futura-pt-2";
-    --base-font-size: 1em;
-    --color: #333333;
-    --weight-bold: 700;
-    --weight-black: 900;
+  /* Base Styles */
+  --base-font-family: "sutro", serif;
+  --base-font-size: 1.1em;
+  --base-line-height: 2em;
+  /* Headlines */
+  --font-headlines: "sutro-deluxe-inline-fill", serif;
+  --font-size-title: 2;
+  --font-size-h1: 4;
+  --font-size-h2: 2.5;
+  --font-size-h3: 1.5;
+  --font-size-h4: 1;
+  --font-size-h5: 0.75;
+  --font-size-h6: 0.65;
+  /*  */
+  --font-monospace: "maple-web", sans-serif;
+  --font-secondary: "mrs-eaves-roman-all-petite-c", serif;
+  --font-buttons: "sutro-deluxe-inline-fill", serif;
+  --font-inputs: "mrs-eaves-roman-all-petite-c", serif;
+  /* colors */
+  --color-yellow: rgb(250, 180, 20);
+  --color-black: rgb(25, 45, 90);
+  --color-grey: rgb(0, 0, 0);
+  --color-foam: rgb(248, 240, 200);
+
+  --base-color: rgb(0, 0, 0);
+  --secondary-color: rgb(0, 0, 0);
+  --tertiary-color: rgb(0, 0, 0);
+  /* Font Weights */
+  --weight-bold: 700;
+  --weight-black: 900;
+  /* font sizes */
+
+  /* spacing */
+  --xsmall: 0.25em;
+  --small: 0.5em;
+  --medium: 2em;
+  --large: 4em;
+  --xlarge: 6em;
 }

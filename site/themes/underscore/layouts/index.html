@@ -1,12 +1,16 @@
 {{ define "main" }}
 
-<h1>Underscore Hugo with Gulp, PostCSS and Webpack</h1>
-
-<h2>Categories</h2>
-<ul>
-  <li>Web</li>
-  <li>Print</li>
-  <li>Video</li>
-</ul>
+<main>
+  <ul>
+    {{ range where .Data.Pages "Section" "programs" }}
+      <li>
+        <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+        <div>
+          {{ .Content }}
+        </div>
+      </li>
+    {{ end }}
+  </ul>
+</main>
 
 {{end}}
