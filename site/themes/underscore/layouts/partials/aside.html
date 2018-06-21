@@ -1,15 +1,4 @@
 <aside>
-  <nav class="main-nav">
-    <ol>
-     <li><a href="/programs">Programs</a></li>
-     <li><a href="/sales-information">Sales Information</a></li>
-     <li><a href="/brand-guide">Brand Guide</a></li>
-     <li><a href="/brand-guide/assets">Assets</a></li>
-     <li><a href="/updates">Updates</a></li>
-     <li><a href="/read-me">Read Me</a></li>
-     <li>For any other needs please feel free to reach out to the Marketing team at <a href="mailto:marketing@21st-amendment.com">marketing@21st-amendment.com</a></li>
-   </ol>
-  </nav>
   {{ range where .Site.RegularPages "Section" "=" "quarterly-focus" }}
   <section class="quarterly-focus">
     <h4>{{ .Title }}</h4>

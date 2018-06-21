@@ -1,22 +1,18 @@
 {{ define "main" }}
 <main>
   <section>
-    <article>
     <header>
       <h1 class="title">{{ .Title }}</h1>
+      {{ .Content }}
     </header>
-    {{ .Content }}
-    <ul>
     {{ range .Data.Pages }}
-      <li>
-        <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-        {{ partial "post-meta" . }}
-        {{ .Content }}
-      </li>
-    {{ end }}
-    </ul>
+    <article>
+      <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+      {{ partial "post-meta" . }}
+      {{ .Content }}
     </article>
-    {{ partial "aside" . }}
+    {{ end }}
   </section>
+{{ partial "aside" . }}
 </main>
 {{ end }}

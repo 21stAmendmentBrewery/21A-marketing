@@ -3,11 +3,11 @@
   <section>
     {{ range where .Data.Pages "Section" "programs" }}
       <article>
-        <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+        <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
         {{ .Content }}
       </article>
     {{ end }}
-    {{ partial "aside" . }}
   </section>
+  {{ partial "aside" . }}
 </main>
 {{end}}

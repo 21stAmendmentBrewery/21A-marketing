@@ -1,0 +1,7 @@
+.main-nav {
+  & ol li a {
+    display: block;
+    margin-right: var(--medium);
+    float: left;
+  }
+}
