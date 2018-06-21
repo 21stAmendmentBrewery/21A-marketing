@@ -7,6 +7,9 @@ section {
     lost-column: 3/4 0;
   }
 }
+.single {
+  lost-column: 1/1 0;
+}
 article {
   lost-column: 1/1 0;
   @media (--medium-screen) {

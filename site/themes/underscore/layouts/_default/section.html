@@ -7,7 +7,7 @@
     </header>
     {{ range .Data.Pages }}
     <article>
-      <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+      <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
       {{ partial "post-meta" . }}
       {{ .Content }}
     </article>
