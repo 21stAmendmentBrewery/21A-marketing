@@ -2,3 +2,5 @@ backend:
   name: github
   repo: 21stAmendmentBrewery/21A-marketing # Replace with your repo
   branch: master
+
+publish_mode: editorial_workflow
