@@ -33,4 +33,9 @@ title: "21st Amendment Brewery Assets"
 1. Beer Sell Sheets
   - UPC
 
-## Beers ##
+## Packaging
+### Beer Page
+1. Sell sheet
+1. Assets
+1. UPC
+1. Nutritiona Facts
