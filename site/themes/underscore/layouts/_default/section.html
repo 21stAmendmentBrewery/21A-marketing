@@ -6,10 +6,10 @@
       {{ .Content }}
     </header>
     {{ range .Data.Pages }}
-    <article>
+    <article class="card">
+      {{if isset .Params "image" }}<a href="{{ .Permalink }}"><img class="img-fluid" src="{{ index .Params "image" | absURL }}"></a>{{ end }}
       <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
       {{ partial "post-meta" . }}
-      <a href="{{ .Permalink }}">{{if isset .Params "image" }}<img src="{{ index .Params "image" | absURL }}"></a>{{ end }}
       {{ .Content }}
     </article>
     {{ end }}

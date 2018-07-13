@@ -2,10 +2,15 @@
 <main>
   <section>
     {{ range where .Data.Pages "Section" "programs" }}
-      <article>
+      <article class="card">
         <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
         {{ .Content }}
       </article>
+    {{ end }}
+    {{ range where .Data.Pages "Section" "notifications" }}
+    <ul>
+      <li>{{ .Title }}</li>
+    </ul>
     {{ end }}
   </section>
   {{ partial "aside" . }}
