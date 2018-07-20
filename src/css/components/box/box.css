@@ -1,0 +1,36 @@
+:root {
+  --box-border-radius: .25rem;
+  --box-body-padding: 1.25rem;
+  --box-image-radius: var(--box-border-radius);
+  --box-title-margin: 0 0 .75em 0;
+  --box-text-size: 14px;
+  --box-text-line-height: var(--spacing-medium);
+  --box-text-margin: var(--box-title-margin);
+}
+.box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  border-radius: var(--box-border-radius);
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+}
+.box__image-top {
+  width: 100%;
+  border-top-left-radius: calc(var(--box-border-radius) - 1px);
+  border-top-right-radius: calc(var(--box-border-radius) - 1px);
+}
+.box__body {
+  flex: 1 1 auto;
+  padding: var(--box-body-padding);
+}
+.box__title {
+  margin: var(--box-title-margin);
+}
+.box__text {
+  font-size: var(--box-text-size);
+  line-height: var(--box-text-line-height);
+  margin: var(--box-text-margin);
+}
