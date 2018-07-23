@@ -44,7 +44,10 @@
     "whatwg-fetch": "^2.0.3"
   },
   "devDependencies": {
+    "gulp-sass": "^4.0.1",
     "lost": "^8.2.1",
+    "node-sass": "^4.9.2",
+    "postcss-ant": "^2.1.1",
     "postcss-baseline-grid-overlay": "^3.0.1"
   }
 }

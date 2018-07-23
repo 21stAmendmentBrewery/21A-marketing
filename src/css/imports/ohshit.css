@@ -1,7 +1,36 @@
-.main-nav {
-  & ol li a {
-    display: block;
-    margin-right: var(--medium);
-    float: left;
-  }
+@lost gutter 10px;
+
+.header {
+  lost-utility: clearfix;
+}
+.logo {
+  lost-column: 1/1;
+  text-align: center;
+}
+.menu {
+  lost-column: 1/1;
+  padding: 0 var(--spacing-medium) 0 var(--spacing-medium);
+}
+.menu__link {
+  display: block;
+  margin-right: var(--spacing-medium);
+  float: left;
+}
+.main {
+  lost-column: 1/1;
+  lost-utility: clearfix;
+  padding: var(--spacing-medium);
+}
+.dashboard-programs {
+  lost-column:2/4 3 10px;
+}
+.dashboard-quick, .dashboard-info {
+  lost-column:1/4 3 10px;
+}
+.box--theme-underscore {
+  margin-bottom: var(--spacing-small);
+}
+.assets-logo {
+  padding: 45px 15px;
+  background-color: whitesmoke;
 }

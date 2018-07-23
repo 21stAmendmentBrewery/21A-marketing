@@ -31,10 +31,14 @@
   --weight-black: 900;
   /* font sizes */
 
+  
   /* spacing */
-  --xsmall: 0.25em;
-  --small: 0.5em;
-  --medium: 2em;
-  --large: 4em;
-  --xlarge: 6em;
+  --spacing-xsmall: 0.25em;
+  --spacing-small: 0.5em;
+  --spacing-medium: 2em;
+  --spacing-large: 4em;
+  --spacing-xlarge: 6em;
+
+
+
 }

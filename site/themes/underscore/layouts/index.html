@@ -1,18 +1,50 @@
 {{ define "main" }}
-<main>
-  <section>
+<main class="main">
+  <section class="dashboard-programs">
     {{ range where .Data.Pages "Section" "programs" }}
-      <article class="card">
-        <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
-        {{ .Content }}
-      </article>
-    {{ end }}
-    {{ range where .Data.Pages "Section" "notifications" }}
-    <ul>
-      <li>{{ .Title }}</li>
-    </ul>
+    <article class="box box--theme-underscore">
+      {{if isset .Params "image" }}<a href="{{ .Permalink }}"><img class="box__img-top img-fluid" src="{{ index .Params "image" | absURL }}" alt="Card image cap"></a>{{ end }}
+      <div class="box__body">
+        <h5 class="box__title"><a href="{{ .Permalink }}">{{ .Title }}</a></h5>
+        {{ partial "post-meta" . }}
+        <p class="box__text">{{ .Summary }}</p>
+        <a href="#" class="button">Go somewhere</a>
+      </div>
+    </article>
     {{ end }}
   </section>
-  {{ partial "aside" . }}
+  <section class="dashboard-info">
+    <article class="box box--theme-underscore">
+      <img class="box__image-top assets-logo" src="images/logo-assets/21stAmendment-Logo-2Color-S.png">
+      <div class="box__body">
+        <h5 class="box__title"><a href="{{ .Permalink }}">Need our logo?</a></h5>
+        <p class="box__text">Need our logo for a poster, or to provide to a vendor?</p>
+        <a href="#" class="button">Download</a>
+        <a href="#" class="button">More Options</a>
+      </div>
+    </article>
+    <article class="box box--theme-underscore">
+      <div class="box__body">
+        {{ with .Site.GetPage "page" "assets/beer-calendar.md" }}
+        <h5 class="box__title"><a href="{{ .Permalink }}">{{ .Title }}</a></h5>
+        <p class="box__text">{{ .Content }}</p>
+        <a href="#" class="button">Download</a>
+        {{ end }}
+      </div>
+    </article>
+  </section>
+  <section class="dashboard-quick">
+    <article class="box box--theme-underscore">
+      <div class="box__body">
+        <h5 class="box__title">Nofifications</h5>
+        <p class="box__text">{{ .Content }}</p>
+        {{ range where .Data.Pages "Section" "notifications" }}
+        <ul class="box__text">
+          <li>{{ .Title }}</li>
+        </ul>
+        {{ end }}
+      </div>
+    </article>
+  </section>
 </main>
 {{end}}

@@ -1,14 +1,17 @@
-<header>
-  <a href="{{ .Site.BaseURL }}"><img src="images/21stAmendmentBrewery-logo.png" alt="{{ .Site.Title }}"></a>
-  <nav class="nav main-nav">
-    <ol>
-      <li><a href="/">Dashboard</a></li>
-      <li><a href="/programs">Programs</a></li>
-      <li><a href="/sales-information">Sales Information</a></li>
-      <li><a href="/brand-guide">Brand Guide</a></li>
-      <li><a href="/brand-guide/assets">Assets</a></li>
-      <li><a href="/notifications">Notifications</a></li>
-      <li><a href="/help">Help</a></li>
+<header class="header">
+  <div class="logo">
+    <a class="logo__link" href="{{ .Site.BaseURL }}">
+      <img class="logo__image" src="images/21stAmendmentBrewery-logo.png" alt="{{ .Site.Title }}">
+    </a>
+  </div>
+  <nav class="menu">
+    <ol class="menu__list">
+      <li><a class="menu__link" href="/">Dashboard</a></li>
+      <li><a class="menu__link" href="/programs">Programs</a></li>
+      <li><a class="menu__link" href="/assets">Assets</li>
+      <li><a class="menu__link" href="/beers">Beers</li>
+      <li><a class="menu__link" href="/brand-guide">Brand Guide</a></li>
+      <li><a class="menu__link" href="/help">Help</a></li>
    </ol>
   </nav>
 </header>
